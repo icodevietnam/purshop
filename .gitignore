@@ -7,3 +7,5 @@
 /core/.settings
 /core/*.project
 /app/*.project
+/app/node_modules
+/app/node
