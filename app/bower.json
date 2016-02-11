@@ -14,8 +14,8 @@
   "private": true,
   "dependencies" : {
       "jquery": "2.1.1",
-      "bootstrap": "4.0",
       "fontawesome" : "4.2.0",
+      "foundation" : "https://github.com/zurb/bower-foundation.git",
       "animatecss" : "https://github.com/daneden/animate.css/",
       "normalize-css" : "git://github.com/necolas/normalize.css.git",
       "tether" : "https://github.com/HubSpot/tether.git"

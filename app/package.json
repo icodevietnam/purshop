@@ -1,7 +1,7 @@
 {
-    "name": "up4distribution",
+    "name": "Purshop",
     "version": "0.0.1",
-    "description": "Description for up4distribution",
+    "description": "Description Purshop",
     "dependencies": {
     "grunt-cli": "0.1.13"
      },
