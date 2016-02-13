@@ -15,9 +15,12 @@
   "dependencies" : {
       "jquery": "2.1.1",
       "fontawesome" : "4.2.0",
-      "foundation" : "https://github.com/zurb/bower-foundation.git",
+      "bootstrap": "4.0",
       "animatecss" : "https://github.com/daneden/animate.css/",
       "normalize-css" : "git://github.com/necolas/normalize.css.git",
+      "angular" : null,
+      "underscore-amd" : null,
+      "requirejs" : null,
       "tether" : "https://github.com/HubSpot/tether.git"
   }
 }
