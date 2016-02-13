@@ -9,3 +9,5 @@
 /app/*.project
 /app/node_modules
 /app/node
+/.recommenders
+/core/target
