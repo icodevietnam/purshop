@@ -10,6 +10,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
+<link href="<c:url value='/resources/assets/vendors/bootstrap/dist/css/bootstrap.min.css'/>"
+    rel="stylesheet">
 </head>
 <body>
 <div class="app-container">
@@ -25,5 +27,6 @@
         </div>
         <tiles:insertAttribute name="footer" />
 </div>
+<script data-main="<c:url value='/resources/assets/main'/>" src="<c:url value='/resources/assets/vendors/requirejs/require.js'/>"></script>
 </body>
 </html>

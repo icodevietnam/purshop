@@ -15,7 +15,7 @@
   "dependencies" : {
       "jquery": "2.1.1",
       "fontawesome" : "4.2.0",
-      "bootstrap": "4.0",
+      "bootstrap": "4.0.0-alpha.2",
       "animatecss" : "https://github.com/daneden/animate.css/",
       "normalize-css" : "git://github.com/necolas/normalize.css.git",
       "angular" : null,
