@@ -19,8 +19,6 @@
 		<jackson.databind>2.4.1.1</jackson.databind>
 		<file.upload>1.3.1</file.upload>
 		<commons.io.version>2.4</commons.io.version>
-		<java.mail.version>1.4.7</java.mail.version>
-		<joda.time.version>2.9</joda.time.version>
 		<javassist>3.12.0.GA</javassist>
 		<frontend.plugin>0.0.26</frontend.plugin>
 		<mail.version>1.4.7</mail.version>
@@ -92,12 +90,6 @@
 			<artifactId>hibernate-core</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
-		<!-- Servlet API -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.0.1</version>
-		</dependency>
 		<!-- LogBack dependencies -->
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
@@ -163,16 +155,6 @@
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>${commons.io.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>javax.mail</groupId>
-			<artifactId>mail</artifactId>
-			<version>${java.mail.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>joda-time</groupId>
-			<artifactId>joda-time</artifactId>
-			<version>${joda.time.version}</version>
 		</dependency>
 		<!-- JavAssist -->
 		<dependency>

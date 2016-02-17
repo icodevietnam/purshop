@@ -12,6 +12,12 @@
 <title>Insert title here</title>
 <link href="<c:url value='/resources/assets/vendors/bootstrap/dist/css/bootstrap.min.css'/>"
     rel="stylesheet">
+<link href="<c:url value='/resources/assets/vendors/fontawesome/css/font-awesome.min.css'/>"
+    rel="stylesheet">
+<link href="<c:url value='/resources/assets/vendors/animatecss/index.css'/>"
+    rel="stylesheet">
+<link href="<c:url value='/resources/assets/vendors/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css'/>"
+    rel="stylesheet">
 </head>
 <body>
 <div class="app-container">
