@@ -10,14 +10,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
-<link href="<c:url value='/resources/assets/vendors/bootstrap/dist/css/bootstrap.min.css'/>"
-    rel="stylesheet">
-<link href="<c:url value='/resources/assets/vendors/fontawesome/css/font-awesome.min.css'/>"
-    rel="stylesheet">
-<link href="<c:url value='/resources/assets/vendors/animatecss/index.css'/>"
-    rel="stylesheet">
-<link href="<c:url value='/resources/assets/vendors/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css'/>"
-    rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="app-container">
@@ -33,6 +27,5 @@
         </div>
         <tiles:insertAttribute name="footer" />
 </div>
-<script data-main="<c:url value='/resources/assets/main'/>" src="<c:url value='/resources/assets/vendors/requirejs/require.js'/>"></script>
 </body>
 </html>

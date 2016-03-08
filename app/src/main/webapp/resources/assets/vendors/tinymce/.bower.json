@@ -1,0 +1,14 @@
+{
+  "name": "tinymce",
+  "homepage": "https://github.com/tinymce/tinymce",
+  "version": "4.3.7",
+  "_release": "4.3.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "4.3.7",
+    "commit": "a798ffad7ebee3e299e5236685b39bbdc4e49034"
+  },
+  "_source": "https://github.com/tinymce/tinymce.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/tinymce/tinymce.git"
+}
