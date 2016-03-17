@@ -81,7 +81,7 @@
 				<div class="row">
 					<div class="col-md-6 col-sm-12">
 						<div class="thumbnail no-margin-bottom">
-							<img src="../img/thumbnails/picjumbo.com_IMG_4566.jpg"
+							<img src="<c:url value='/resources/assets/img/picjumbo.com_IMG_4566.jpg'/>"
 								class="img-responsive">
 							<div class="caption">
 								<h3 id="thumbnail-label">
@@ -100,7 +100,7 @@
 					</div>
 					<div class="col-md-6 col-sm-12">
 						<div class="thumbnail no-margin-bottom">
-							<img src="../img/thumbnails/picjumbo.com_IMG_3241.jpg"
+							<img src="<c:url value='/resources/assets/img/picjumbo.com_IMG_3241.jpg'/>"
 								class="img-responsive">
 							<div class="caption">
 								<h3 id="thumbnail-label">
@@ -156,7 +156,7 @@
 					<div class="card-body no-padding">
 						<ul class="message-list">
 							<a href="#">
-								<li><img src="../img/profile/profile-1.jpg"
+								<li><img src="<c:url value='/resources/assets/img/profile-1.jpg'/>"
 									class="profile-img pull-left">
 									<div class="message-block">
 										<div>
@@ -169,7 +169,7 @@
 									</div></li>
 							</a>
 							<a href="#">
-								<li><img src="../img/profile/profile-1.jpg"
+								<li><img src="<c:url value='/resources/assets/img/profile-1.jpg'/>"
 									class="profile-img pull-left">
 									<div class="message-block">
 										<div>
@@ -182,7 +182,7 @@
 									</div></li>
 							</a>
 							<a href="#">
-								<li><img src="../img/profile/profile-1.jpg"
+								<li><img src="<c:url value='/resources/assets/img/profile-1.jpg'/>"
 									class="profile-img pull-left">
 									<div class="message-block">
 										<div>
@@ -195,7 +195,7 @@
 									</div></li>
 							</a>
 							<a href="#">
-								<li><img src="../img/profile/profile-1.jpg"
+								<li><img src="<c:url value='/resources/assets/img/profile-1.jpg'/>"
 									class="profile-img pull-left">
 									<div class="message-block">
 										<div>

@@ -20,6 +20,8 @@
   	  "bootstrapswitch" : "https://github.com/nostalgiaz/bootstrap-switch.git",
   	  "less" : "git://github.com/less/less.git",
   	  "normalize-css" : "git://github.com/necolas/normalize.css.git",
+  	  "Chart" : "https://github.com/nnnick/Chart.js.git",
+  	  "jquery-match-height" : "https://github.com/liabru/jquery-match-height.git",
   	  "checkbox3" : "https://github.com/tui2tone/checkbox3.git",
   	  "datatables" : "https://github.com/DataTables/DataTables.git",
   	  "select2" : "https://github.com/select2/select2.git",

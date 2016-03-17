@@ -12,6 +12,8 @@
 <title>Insert title here</title>
 <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+<link href="<c:url value='/resources/assets/css/app.min.css'/>"
+	rel="stylesheet">
 </head>
 <body>
 <div class="app-container">
@@ -26,6 +28,9 @@
             </div>
         </div>
         <tiles:insertAttribute name="footer" />
+        <div>
+        <script src="<c:url value='/resources/assets/js/admin.min.js'/>"></script>
+        </div>
 </div>
 </body>
 </html>

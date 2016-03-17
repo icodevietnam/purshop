@@ -26,9 +26,9 @@ module.exports = function (grunt) {
 		// Clean asset files
 		clean:	{
 			assets: [
-			    '<%= paths.js %>/app.min.js',
-				'<%= paths.js %>/app.min.js.map',
-				'<%= paths.css %>/app.min.css'
+			    '<%= paths.assets.js %>/admin.min.js',
+				'<%= paths.assets.js %>/admin.min.js.map',
+				'<%= paths.assets.css %>/admin.min.css'
 			],
 			build: 'build'
 		},
@@ -39,12 +39,12 @@ module.exports = function (grunt) {
 				options: {
                     mangle      : true,
                     compres     : true,
-                    sourceMap   : '<%= paths.js %>/app.min.map'
+                    sourceMap   : '<%= paths.assets.js %>/admin.min.map'
                 },
                 src: [
-                      '<%= paths.build.js %>/app.js'
+                      '<%= paths.build.js %>/admin.js'
                 ],
-                dest: '<%= paths.js %>/app.min.js'
+                dest: '<%= paths.assets.js %>/admin.min.js'
 			},
 			prod: {
 				options: {
@@ -53,9 +53,9 @@ module.exports = function (grunt) {
                     sourceMap   : false
                 },
                 src: [
-                    '<%= paths.build.js %>/app.js'
+                    '<%= paths.build.js %>/admin.js'
                 ],
-                dest: '<%= paths.js %>/app.min.js'
+                dest: '<%= paths.assets.js %>/admin.min.js'
 			}
 		},
 		
@@ -67,18 +67,19 @@ module.exports = function (grunt) {
             },
             target: {
                 src: [
-                    '<%= paths.assets.js %>/app.js'
+                    '<%= paths.assets.js %>/admin.js'
                 ]
             }
         },
         
-        // Less to css, all less files MUST import to app.less.
+        // Less to css, all less files MUST import to admin.less.
         less: {
             less_compile: {
                 files: {
-                    '<%= paths.css %>/app.css': [
-                        '<%= paths.assets.less %>/page/landing/*.less'
-                    ]
+                    '<%= paths.assets.css %>/admin.css':'<%= paths.assets.less %>/admin/*.less'
+                },
+                home:{
+                	'<%= paths.assets.css %>/home.css':'<%= paths.assets.less %>/home/*.less'
                 }
             }
         },
@@ -88,27 +89,38 @@ module.exports = function (grunt) {
             css: {
                 src: [
                     '<%= paths.assets.vendor %>/bootstrap/dist/css/bootstrap.css',
+                    '<%= paths.assets.vendor %>/bootstrapswitch/dist/css/bootstrap3/bootstrap-switch.css',
                     '<%= paths.assets.vendor %>/fontawesome/css/font-awesome.css',
                     '<%= paths.assets.vendor %>/animatecss/css/animate.css',
                     '<%= paths.assets.vendor %>/checkbox3/dist/checkbox3.css',
                     '<%= paths.assets.vendor %>/normalize-css/normalize.css',
                     '<%= paths.assets.vendor %>/tether/dist/css/tether.css',
-                    '<%= paths.assets.css %>/app.css'
+                    '<%= paths.assets.vendor %>/datatables/media/css/jquery.dataTables.css',
+                    '<%= paths.assets.vendor %>/datatables/media/css/dataTables.bootstrap.css',
+                    '<%= paths.assets.vendor %>/select2/dist/css/select2.css',
+                    '<%= paths.assets.css %>/style.css',
+                    '<%= paths.assets.css %>/themes/flat-blue.css',
+                    '<%= paths.assets.css %>/admin.css'
                 ],
-                dest: '<%= paths.build.css %>/app.css'
+                dest: '<%= paths.build.css %>/admin.css'
             },
             js: {
                 options: {
                     seperator: ';',
-                    banner: "/* up4d Software 2015 */\n"
+                    banner: "/* purshop Software 2015 */\n"
                 },
                 src: [
                     '<%= paths.assets.vendor %>/jquery/dist/jquery.js',
-                    '<%= paths.assets.vendor %>/tether/dist/js/tether.js',
                     '<%= paths.assets.vendor %>/bootstrap/dist/js/bootstrap.js',
-                    '<%= paths.assets.js %>/app.js'
+                    '<%= paths.assets.vendor %>/Chart/Chart.js',
+                    '<%= paths.assets.vendor %>/jquery-match-height/dist/jquery.matchHeight.js',
+                    '<%= paths.assets.vendor %>/datatables/media/js/jquery.dataTables.js',
+                    '<%= paths.assets.vendor %>/datatables/media/js/dataTables.bootstrap.js',
+                    '<%= paths.assets.vendor %>/bootstrapswitch/dist/js/bootstrap-switch.js',
+                    '<%= paths.assets.vendor %>/select2/dist/js/select2.full.js',
+                    '<%= paths.assets.js %>/admin.js'
                 ],
-                dest: '<%= paths.build.js %>/app.js'
+                dest: '<%= paths.build.js %>/admin.js'
             }
         },
         
@@ -127,7 +139,7 @@ module.exports = function (grunt) {
         csscomb: {
             dist: {
                 files: {
-                    '<%= paths.assets.css %>/app.comb.css': ['<%= paths.assets.css %>/app.css']
+                    '<%= paths.assets.css %>/admin.comb.css': ['<%= paths.assets.css %>/admin.css']
                 }
             }
         },
@@ -135,7 +147,7 @@ module.exports = function (grunt) {
         cssmin: {
             target: {
                 files: {
-                    '<%= paths.css %>/app.min.css': ['<%= paths.build.css %>/app.css']
+                    '<%= paths.assets.css %>/admin.min.css': ['<%= paths.build.css %>/admin.css']
                 }
             }
         }
